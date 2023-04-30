@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #1b1f21;/*color Dark Jungle dado en la maqueta*/
+}
+
+
+.continente {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+menu {
+    display: flex;
+    flex-direction: column;
+    /*border: solid 1px;*//*se pinta borde como auxilio durante maquetación*/
+    flex-grow: 1;
+    flex-basis: 1;
+    width: 20%;
+    padding: 1%;
+}
+
+menu div {
+    display: flex;
+    align-items: center;
+}
+
+.texto-junto-imagen {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+#activa {
+    margin-top: 5%;
+}
+
+#texto-activa {
+    color: #bec1bb;/*color Gray dado en la maqueta*/
+    font-size: small;
+}
+
+#iconos {
+    display: flex;
+    margin: 5px;
+    width: 150px;
+    justify-content: space-between;
+    color: #444749;
+    margin-right: 5%;
+}
+
+#mensaje:hover, #hamburguesa:hover {
+    color: #828485;/*se usa color Outer Space*/
+}
+
+menu img {
+    width: 15%;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+menu img:hover {
+    border: solid 2px #444749;/*se aplica color Old silver*/
+}
+
+.boton {
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+button {
+    background-color: #a491d2;/*color Blue Bell dado en la maqueta*/
+    border-width: 0;
+    color: white;
+    padding: 2%;
+    width: 75%;
+}
+
+button:hover {
+    /*se altera color al pasar puntero por encima del botón*/
+    background-color: #cdc3e6;/*color Soap dado en la maqueta*/
+}
+
+button:focus {
+    background-color: #e8ebe4;/*color Platinum para Focus según maqueta*/
+}
+
+
+/*---------------------------------------------------------------*/
+
+/*Estructura main*/
+
+main {
+    /*border: solid 1px;*//*se pinta el borde durante la maquetación*/
+    background-color: #e8ebe4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+}
+
+main img {
+    width: 35%;
+}
+
+main h1 {
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: -1%;
+}
+
+main p {
+    font-size: 16px;
+    width: 50%;
+    justify-content: center;
+}
+
