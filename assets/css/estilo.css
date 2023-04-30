@@ -16,12 +16,11 @@ menu {
     display: flex;
     flex-direction: column;
     /*border: solid 1px;*//*se pinta borde como auxilio durante maquetación*/
-    flex-grow: 1;
-    flex-basis: 1;
-    width: 20%;
+    flex: 0 0 25%;/*recomendación de la documentación*/
     padding: 1%;
 }
 
+/*se asigna propiedad flex a los div (flex-items) contenidos en menu*/
 menu div {
     display: flex;
     align-items: center;
@@ -33,8 +32,14 @@ menu div {
     margin-left: 15px;
 }
 
-#activa {
-    margin-top: 5%;
+.activa {
+    margin-top: 1%;
+    justify-content: space-between;/*se separan los elementos div dentro de esta clase; recomendación de la documentación*/
+
+}
+
+.imagen-texto {
+    display: flex;/*sigo la recomendación de la documentación*/
 }
 
 #texto-activa {
@@ -65,11 +70,14 @@ menu img:hover {
     border: solid 2px #444749;/*se aplica color Old silver*/
 }
 
+
+/*definiciones para el botón: recomendaciones de la documentación*/
 .boton {
     justify-content: center;
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    /*se agrega espacio arriba y abajo, para aproximarse a la maqueta*/
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 button {
@@ -98,7 +106,7 @@ main {
     /*border: solid 1px;*//*se pinta el borde durante la maquetación*/
     background-color: #e8ebe4;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;/*recomendación de la documentación*/
     justify-content: center;
     align-items: center;
     flex-grow: 2;
